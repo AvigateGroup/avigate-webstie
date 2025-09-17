@@ -13,15 +13,46 @@ const HeroSection = () => {
               Simplify your public transport journey with real-time updates, fare estimation, and community-driven insights for buses, taxis, tricycles, and more.
             </p>
             
-            {/* CTA Buttons */}
-            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-slide-up">
-              <button className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
-                Download App
-              </button>
-              <button className="btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
-                Learn More
-              </button>
+            {/* Coming Soon Badge */}
+            <div className="mt-4 sm:mt-6 flex justify-center lg:justify-start">
+              <div className="inline-flex items-center bg-gradient-to-r from-[#86B300] to-[#9ac72f] text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
+                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                </svg>
+                Coming Soon
+              </div>
             </div>
+            
+            {/* App Store Badges */}
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-slide-up">
+              {/* App Store Badge */}
+              <div className="relative group cursor-pointer">
+                <img
+                  src="/images/badges/app-store-badge.png"
+                  alt="Download on the App Store"
+                  className="h-12 sm:h-14 lg:h-16 w-auto transition-transform duration-200 group-hover:scale-105"
+                />
+                {/* Coming Soon Overlay */}
+                <div className="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="text-white text-xs font-semibold">Coming Soon</span>
+                </div>
+              </div>
+              
+              {/* Google Play Badge */}
+              <div className="relative group cursor-pointer">
+                <img
+                  src="/images/badges/google-play-badge.png"
+                  alt="Get it on Google Play"
+                  className="h-12 sm:h-14 lg:h-16 w-auto transition-transform duration-200 group-hover:scale-105"
+                />
+                {/* Coming Soon Overlay */}
+                <div className="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="text-white text-xs font-semibold">Coming Soon</span>
+                </div>
+              </div>
+            </div>
+            
+
           </div>
           
           {/* Image Section */}
