@@ -20,37 +20,38 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
+          
           <div className="lg:w-1/2 mt-12 lg:mt-0 lg:pl-12">
             <div className="relative">
-              <div className="bg-white rounded-3xl shadow-2xl p-8 transform rotate-2 hover:rotate-0 transition-transform duration-300 animate-bounce-gentle">
-                <div className="bg-gray-800 rounded-2xl p-6 text-white">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="font-bold text-lg">Your Route</h3>
-                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="flex items-center">
-                      <div className="w-3 h-3 bg-green-600 rounded-full mr-3"></div>
-                      <span>Victoria Island</span>
-                    </div>
-                    <div className="border-l-2 border-gray-600 ml-1.5 h-8"></div>
-                    <div className="flex items-center">
-                      <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-                      <span>Ikeja</span>
-                    </div>
-                  </div>
-                  <div className="mt-6 bg-green-600 rounded-xl p-4">
-                    <div className="flex justify-between items-center">
-                      <div>
-                        <p className="text-sm opacity-80">Estimated Fare</p>
-                        <p className="text-2xl font-bold">₦450</p>
-                      </div>
-                      <div className="text-right">
-                        <p className="text-sm opacity-80">Duration</p>
-                        <p className="text-xl font-semibold">25 min</p>
-                      </div>
-                    </div>
-                  </div>
+              {/* Hero Image Container - Professional Sizing */}
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <div className="aspect-[4/3] lg:aspect-[3/4] xl:aspect-[4/3]">
+                  <img 
+                    src="/images/hero-section.png"
+                    alt="Avigate app interface showing route from Victoria Island to Ikeja with fare estimation"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                {/* Optional overlay for better visual appeal */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-green-200 rounded-full opacity-60 animate-pulse"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-200 rounded-full opacity-40 animate-bounce-gentle"></div>
+              
+              {/* Additional professional touch - floating cards */}
+              <div className="absolute top-8 -left-4 bg-white rounded-lg shadow-lg p-3 animate-float">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="text-sm font-medium text-gray-700">Live Updates</span>
+                </div>
+              </div>
+              
+              <div className="absolute bottom-8 -right-4 bg-white rounded-lg shadow-lg p-3 animate-float-delayed">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <span className="text-sm font-medium text-gray-700">Smart Routes</span>
                 </div>
               </div>
             </div>
