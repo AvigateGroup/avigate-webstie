@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, MapPin } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,10 +37,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
-              <MapPin className="w-6 h-6 text-white" />
-            </div>
-            <span className="ml-3 text-2xl font-bold text-gray-800">Avigate</span>
+            <img 
+              src="/public/images/logo/logo-black.svg" 
+              alt="Avigate Logo" 
+              className="w-24 h-36 object-contain"
+            />
           </div>
 
           {/* Desktop Navigation */}
