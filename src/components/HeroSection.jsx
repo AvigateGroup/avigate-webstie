@@ -1,13 +1,13 @@
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-blue-50 pt-20 pb-8 px-4 sm:px-6 lg:px-8">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#86B300]/10 via-white to-blue-50 pt-20 pb-8 px-4 sm:px-6 lg:px-8">
       <div className="container-width max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Section */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-800 leading-tight animate-fade-in">
               Navigate Your City
-              <span className="text-green-600 block mt-2">Smarter with Avigate</span>
+              <span className="text-[#86B300] block mt-2">Smarter with Avigate</span>
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slide-up">
               Simplify your public transport journey with real-time updates, fare estimation, and community-driven insights for buses, taxis, tricycles, and more.
@@ -42,13 +42,13 @@ const HeroSection = () => {
               </div>
               
               {/* Decorative Elements - Hidden on small screens */}
-              <div className="hidden sm:block absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-green-200 rounded-full opacity-60 animate-pulse"></div>
+              <div className="hidden sm:block absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-[#86B300]/20 rounded-full opacity-60 animate-pulse"></div>
               <div className="hidden sm:block absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-blue-200 rounded-full opacity-40 animate-bounce-gentle"></div>
               
               {/* Floating Feature Cards - Responsive positioning */}
               <div className="absolute top-4 sm:top-6 lg:top-8 -left-2 sm:-left-4 bg-white rounded-lg shadow-lg p-2 sm:p-3 animate-float">
                 <div className="flex items-center space-x-1 sm:space-x-2">
-                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full"></div>
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-[#86B300] rounded-full"></div>
                   <span className="text-xs sm:text-sm font-medium text-gray-700">Live Updates</span>
                 </div>
               </div>

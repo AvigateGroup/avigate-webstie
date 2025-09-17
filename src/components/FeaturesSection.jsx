@@ -2,8 +2,8 @@ import { Clock, MapPin, Users, Route } from 'lucide-react';
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="card p-8">
-    <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
-      <Icon className="w-8 h-8 text-green-600" />
+    <div className="w-16 h-16 bg-[#86B300]/10 rounded-2xl flex items-center justify-center mb-6">
+      <Icon className="w-8 h-8 text-[#86B300]" />
     </div>
     <h3 className="text-xl font-bold text-gray-800 mb-4">{title}</h3>
     <p className="text-gray-600 leading-relaxed">{description}</p>

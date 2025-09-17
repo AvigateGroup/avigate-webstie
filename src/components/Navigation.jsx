@@ -45,7 +45,7 @@ const Navigation = () => {
     <a
       href={href}
       onClick={onClick}
-      className={`text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 cursor-pointer ${className}`}
+      className={`text-gray-700 hover:text-[#86B300] font-medium transition-colors duration-200 cursor-pointer ${className}`}
       aria-label={`Navigate to ${children}`}
     >
       {children}
@@ -108,7 +108,7 @@ const Navigation = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-green-600 transition-colors duration-200 p-2"
+              className="text-gray-700 hover:text-[#86B300] transition-colors duration-200 p-2"
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isMenuOpen}
             >
