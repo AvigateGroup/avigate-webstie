@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, MapPin, Clock, Users, Route, ChevronDown, Star, Smartphone, Play } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, MapPin, Clock, Users, Route,  Star, Smartphone, Play } from 'lucide-react';
 
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
