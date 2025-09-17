@@ -1,12 +1,48 @@
-# React + Vite
+# Avigate Landing Page 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for Avigate - Nigeria's smart public transport navigation app. Built with React, Tailwind CSS, and designed with a mobile-first approach.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **🎨 Modern Design** - Clean, minimal interface with Avigate's signature green branding
+- **📱 Mobile-First** - Fully responsive design that works perfectly on all devices
+- **⚡ Fast Performance** - Built with React and optimized for speed
+- **🎭 Smooth Animations** - Engaging hover effects and scroll animations
+- **🧭 Smart Navigation** - Smooth scrolling between sections with fixed navigation
+- **🚀 Ready to Deploy** - Easy deployment to Vercel, Netlify, or any hosting platform
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Tech Stack
+
+- **Frontend Framework:** React 18+
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Build Tool:** Vite (recommended)
+- **Deployment:** Vercel ready
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 22+ 
+- npm
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/AvigateGroup/avigate-website.git
+cd avigate-website
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Start development server**
+```bash
+npm run dev
+```
+
+
