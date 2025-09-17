@@ -30,7 +30,7 @@ const HowItWorksSection = () => {
           <StepCard 
             number="2"
             title="Plan Route"
-            description="Input your destination and select your preferred transport options"
+            description="Input your destination and let us create a route plans for you"
           />
           <StepCard 
             number="3"
