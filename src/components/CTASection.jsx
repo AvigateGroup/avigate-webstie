@@ -1,30 +1,50 @@
-import { Smartphone, Play } from 'lucide-react';
-
 const CTASection = () => {
   return (
-    <section className="section-padding bg-gradient-to-r from-[#86B300] to-[#739900]">
+    <section className="section-padding bg-white">
       <div className="container-width text-center">
-        <h2 className="text-4xl font-bold text-white mb-6">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
           Ready to Transform Your Commute?
         </h2>
-        <p className="text-xl text-[#86B300]/20 mb-8 max-w-2xl mx-auto">
-          Download Avigate today and join thousands of Nigerians who are already commuting smarter, cheaper, and stress-free.
+        <p className="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto px-4 sm:px-0">
+          Get ready for the future of smart commuting. Download Avigate and join thousands of Nigerians who will soon be commuting smarter, cheaper, and stress-free.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <button className="bg-white text-[#86B300] px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center">
-            <Smartphone className="w-5 h-5 mr-2" />
-            Download for Android
-          </button>
-          <button className="bg-black text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-900 transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center">
-            <Play className="w-5 h-5 mr-2" />
-            Coming to iOS
-          </button>
+        {/* Coming Soon Badge */}
+        <div className="inline-flex items-center bg-[#86B300]/10 text-[#86B300] px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold mb-8 sm:mb-10 border border-[#86B300]/20 shadow-sm">
+          <div className="w-2 h-2 sm:w-3 sm:h-3 bg-[#86B300] rounded-full mr-2 sm:mr-3 animate-pulse"></div>
+          Coming Soon
         </div>
         
-        <p className="text-white/80 text-sm">
-          Free to download • No subscription required • Works offline
-        </p>
+        {/* App Store Badges */}
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12 px-4 sm:px-0">
+          {/* Google Play Badge */}
+          <div className="relative group cursor-pointer transform transition-all duration-300 hover:scale-105">
+            <img 
+              src="/images/badges/google-play-badge.png" 
+              alt="Get it on Google Play" 
+              className="h-12 sm:h-14 lg:h-16 w-auto transition-all duration-300 opacity-90 group-hover:opacity-100 shadow-lg group-hover:shadow-xl rounded-lg"
+            />
+            <div className="absolute inset-0 bg-[#86B300]/10 backdrop-blur-sm rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 border border-[#86B300]/20">
+              <div className="bg-white px-3 py-1.5 rounded-full shadow-md">
+                <span className="text-xs sm:text-sm font-medium text-[#86B300]">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* App Store Badge */}
+          <div className="relative group cursor-pointer transform transition-all duration-300 hover:scale-105">
+            <img 
+              src="/images/badges/app-store-badge.png" 
+              alt="Download on the App Store" 
+              className="h-12 sm:h-14 lg:h-16 w-auto transition-all duration-300 opacity-90 group-hover:opacity-100 shadow-lg group-hover:shadow-xl rounded-lg"
+            />
+            <div className="absolute inset-0 bg-[#86B300]/10 backdrop-blur-sm rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 border border-[#86B300]/20">
+              <div className="bg-white px-3 py-1.5 rounded-full shadow-md">
+                <span className="text-xs sm:text-sm font-medium text-[#86B300]">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
