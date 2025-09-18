@@ -38,11 +38,16 @@ const Footer = () => {
           </div>
                    
           <div>
-            <h3 className="font-bold text-lg mb-4">Legal</h3>
+            <h3 className="font-bold text-lg mb-4">Support</h3>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Contact Support</a></li>
+              <li className="pt-2">
+                <p className="text-sm text-gray-500 mb-1">Contact Support:</p>
+                <a href="mailto:hello@avigate.co" className="text-green-400 hover:text-green-300 transition-colors cursor-pointer font-medium">
+                  hello@avigate.co
+                </a>
+              </li>
             </ul>
           </div>
         </div>
