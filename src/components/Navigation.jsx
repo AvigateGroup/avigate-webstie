@@ -74,7 +74,7 @@ const Navigation = () => {
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
               <img 
-                src="/public/images/logo/logo-black.svg" 
+                src="/images/logo/logo-black.svg" 
                 alt="Avigate Logo" 
                 className="w-20 h-8 sm:w-24 sm:h-10 lg:w-28 lg:h-12 object-contain"
                 loading="eager"

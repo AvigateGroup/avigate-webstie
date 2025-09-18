@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src="/public/images/logo/logo-white.svg" 
+                src="/images/logo/logo-white.svg" 
                 alt="Avigate Logo" 
                 className="w-24 h-36 object-contain"
               />
