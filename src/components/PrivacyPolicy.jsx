@@ -3,6 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
+  
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -10,10 +11,18 @@ const PrivacyPolicy = () => {
     }
   };
 
+  const handleBackToHome = () => {
+    navigate('/');
+    // Force scroll to top after navigation with a small delay
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <nav className="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg">
+      {/* Header - Always opaque for privacy policy page */}
+      <nav className="fixed w-full z-[9999] bg-white/95 backdrop-blur-md shadow-lg">
         <div className="container-width max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 lg:h-20">
             {/* Logo */}
@@ -28,7 +37,7 @@ const PrivacyPolicy = () => {
 
             {/* Back to Home Button */}
             <button
-              onClick={() => navigate('/')}
+              onClick={handleBackToHome}
               className="flex items-center space-x-2 text-gray-700 hover:text-[#86B300] font-medium transition-colors duration-200"
             >
               <ArrowLeft className="w-5 h-5" />
@@ -203,7 +212,7 @@ const PrivacyPolicy = () => {
           {/* Back to Home CTA */}
           <div className="text-center">
             <button
-              onClick={() => navigate('/')}
+              onClick={handleBackToHome}
               className="btn-primary text-lg px-8 py-4"
             >
               Back to Avigate Home
