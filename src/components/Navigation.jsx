@@ -142,7 +142,7 @@ const Navigation = () => {
             {/* Header with Close button */}
             <div className="flex items-center justify-between p-6 border-b border-gray-100">
               <img 
-                src="/public/images/logo/logo-black.svg" 
+                src="/images/logo/logo-black.svg" 
                 alt="Avigate Logo" 
                 className="w-20 h-8 object-contain"
                 loading="eager"
