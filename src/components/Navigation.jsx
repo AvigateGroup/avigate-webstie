@@ -150,52 +150,54 @@ const Navigation = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="flex-1 px-6 py-6 space-y-1 overflow-y-auto">
-              <NavLink 
-                href="#home" 
-                onClick={() => scrollToSection('home')}
-                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
-              >
-                Home
-              </NavLink>
-              <NavLink 
-                href="#features" 
-                onClick={() => scrollToSection('features')}
-                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
-              >
-                Features
-              </NavLink>
-              <NavLink 
-                href="#how-it-works" 
-                onClick={() => scrollToSection('how-it-works')}
-                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
-              >
-                How It Works
-              </NavLink>
-              <NavLink 
-                href="#about" 
-                onClick={() => scrollToSection('about')}
-                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
-              >
-                About
-              </NavLink>
-              <NavLink 
-                href="#contact" 
-                onClick={() => scrollToSection('contact')}
-                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
-              >
-                Contact
-              </NavLink>
-            </div>
-
-            {/* Footer with Download button */}
-            <div className="p-6 border-t border-gray-100">
-              <button 
-                className="w-full btn-primary text-base py-3 font-semibold"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Download App
-              </button>
+            <div className="flex-1 px-6 py-6 overflow-y-auto">
+              <div className="space-y-1">
+                <NavLink 
+                  href="#home" 
+                  onClick={() => scrollToSection('home')}
+                  className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
+                >
+                  Home
+                </NavLink>
+                <NavLink 
+                  href="#features" 
+                  onClick={() => scrollToSection('features')}
+                  className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
+                >
+                  Features
+                </NavLink>
+                <NavLink 
+                  href="#how-it-works" 
+                  onClick={() => scrollToSection('how-it-works')}
+                  className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
+                >
+                  How It Works
+                </NavLink>
+                <NavLink 
+                  href="#about" 
+                  onClick={() => scrollToSection('about')}
+                  className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
+                >
+                  About
+                </NavLink>
+                <NavLink 
+                  href="#contact" 
+                  onClick={() => scrollToSection('contact')}
+                  className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
+                >
+                  Contact
+                </NavLink>
+                
+                {/* Download App button moved here - immediately after Contact */}
+                <div className="pt-4">
+                  <button 
+                    className="w-full btn-primary text-base py-3 font-semibold"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Download App
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
