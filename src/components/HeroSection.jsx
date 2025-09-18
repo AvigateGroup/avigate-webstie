@@ -30,7 +30,7 @@ const HeroSection = () => {
                 <img
                   src="/images/badges/app-store-badge.png"
                   alt="Download on the App Store"
-                  className="h-12 sm:h-14 lg:h-16 w-auto transition-transform duration-200 group-hover:scale-105"
+                  className="h-12 w-36 sm:h-14 sm:w-40 lg:h-16 lg:w-44 object-contain transition-transform duration-200 group-hover:scale-105"
                 />
                 {/* Coming Soon Overlay */}
                 <div className="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -43,7 +43,7 @@ const HeroSection = () => {
                 <img
                   src="/images/badges/google-play-badge.png"
                   alt="Get it on Google Play"
-                  className="h-12 sm:h-14 lg:h-16 w-auto transition-transform duration-200 group-hover:scale-105"
+                  className="h-12 w-36 sm:h-14 sm:w-40 lg:h-16 lg:w-44 object-contain transition-transform duration-200 group-hover:scale-105"
                 />
                 {/* Coming Soon Overlay */}
                 <div className="absolute inset-0 bg-black/60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
