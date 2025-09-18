@@ -8,7 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        {/* Fallback route */}
+        {/* Fallback route - redirects to home */}
         <Route path="*" element={<LandingPage />} />
       </Routes>
     </Router>
