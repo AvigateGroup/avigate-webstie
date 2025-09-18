@@ -112,68 +112,94 @@ const Navigation = () => {
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isMenuOpen}
             >
-              {isMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
+              <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation Overlay */}
-      {isMenuOpen && (
-        <>
-          {/* Backdrop */}
-          <div className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm" aria-hidden="true"></div>
-          
-          {/* Mobile Menu */}
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-lg">
-            <div className="px-4 sm:px-6 py-4 space-y-1 max-h-[calc(100vh-4rem)] overflow-y-auto">
+      {/* Mobile Navigation Slide-out Menu */}
+      <div className={`lg:hidden fixed inset-0 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+        {/* Backdrop */}
+        <div 
+          className="absolute inset-0 bg-black/20 backdrop-blur-sm" 
+          aria-hidden="true"
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+        
+        {/* Slide-out Menu Panel */}
+        <div className={`absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-xl transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'transform translate-x-0' : 'transform translate-x-full'
+        }`}>
+          <div className="flex flex-col h-full">
+            {/* Header with Close button */}
+            <div className="flex items-center justify-between p-6 border-b border-gray-100">
+              <img 
+                src="/public/images/logo/logo-black.svg" 
+                alt="Avigate Logo" 
+                className="w-20 h-8 object-contain"
+                loading="eager"
+              />
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-700 hover:text-[#86B300] transition-colors duration-200 px-3 py-2 text-sm font-medium"
+                aria-label="Close menu"
+              >
+                Close
+              </button>
+            </div>
+
+            {/* Navigation Links */}
+            <div className="flex-1 px-6 py-6 space-y-1 overflow-y-auto">
               <NavLink 
                 href="#home" 
                 onClick={() => scrollToSection('home')}
-                className="block px-3 py-3 text-base rounded-lg hover:bg-gray-50 active:bg-gray-100"
+                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
               >
                 Home
               </NavLink>
               <NavLink 
                 href="#features" 
                 onClick={() => scrollToSection('features')}
-                className="block px-3 py-3 text-base rounded-lg hover:bg-gray-50 active:bg-gray-100"
+                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
               >
                 Features
               </NavLink>
               <NavLink 
                 href="#how-it-works" 
                 onClick={() => scrollToSection('how-it-works')}
-                className="block px-3 py-3 text-base rounded-lg hover:bg-gray-50 active:bg-gray-100"
+                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
               >
                 How It Works
               </NavLink>
               <NavLink 
                 href="#about" 
                 onClick={() => scrollToSection('about')}
-                className="block px-3 py-3 text-base rounded-lg hover:bg-gray-50 active:bg-gray-100"
+                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
               >
                 About
               </NavLink>
               <NavLink 
                 href="#contact" 
                 onClick={() => scrollToSection('contact')}
-                className="block px-3 py-3 text-base rounded-lg hover:bg-gray-50 active:bg-gray-100"
+                className="block px-4 py-4 text-lg rounded-lg hover:bg-gray-50 active:bg-gray-100 border-b border-gray-50"
               >
                 Contact
               </NavLink>
-              <div className="pt-4 border-t border-gray-100">
-                <button 
-                  className="w-full btn-primary text-base py-3"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Download App
-                </button>
-              </div>
+            </div>
+
+            {/* Footer with Download button */}
+            <div className="p-6 border-t border-gray-100">
+              <button 
+                className="w-full btn-primary text-base py-3 font-semibold"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Download App
+              </button>
             </div>
           </div>
-        </>
-      )}
+        </div>
+      </div>
     </nav>
   );
 };
