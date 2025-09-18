@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer id="contact" className="bg-gray-900 text-white py-12">
@@ -26,7 +28,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-                   
+                          
           <div>
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-400">
@@ -36,12 +38,18 @@ const Footer = () => {
               <li><a href="#about" className="hover:text-green-400 transition-colors cursor-pointer">About</a></li>
             </ul>
           </div>
-                   
+                          
           <div>
             <h3 className="font-bold text-lg mb-4">Support</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-green-400 transition-colors cursor-pointer">Terms of Service</a></li>
+              <li>
+                <Link 
+                  to="/privacy-policy"
+                  className="hover:text-green-400 transition-colors cursor-pointer"
+                >
+                  Privacy Policy & Terms
+                </Link>
+              </li>
               <li className="pt-2">
                 <p className="text-sm text-gray-500 mb-1">Contact Support:</p>
                 <a href="mailto:hello@avigate.co" className="text-green-400 hover:text-green-300 transition-colors cursor-pointer font-medium">
@@ -51,7 +59,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-                 
+                      
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; 2025 Avigate Group. All rights reserved.</p>
         </div>
