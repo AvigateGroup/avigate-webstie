@@ -26,24 +26,19 @@ const HowItWorksSection = () => {
   const steps = [
     {
       number: "1",
-      title: "Open Avigate",
-      description: "Launch the app and enter your current location to get started with your journey"
+      title: "Enter Destination",
+      description: "Type where you want to go or select from popular locations"
     },
     {
       number: "2", 
-      title: "Plan Your Route",
-      description: "Input your destination and let us create optimized route plans tailored for you"
+      title: "Choose Your Route",
+      description: "Compare options by time, cost, and comfort level"
     },
     {
       number: "3",
-      title: "Get Real-time Info", 
-      description: "View live fare estimates, multiple route options, and accurate arrival times"
+      title: "Navigate with Ease", 
+      description: "Follow voice guidance and get notified when to stop"
     },
-    {
-      number: "4",
-      title: "Commute Smarter",
-      description: "Follow your optimized route and enjoy a stress-free, efficient journey every time"
-    }
   ];
 
   return (
@@ -51,10 +46,10 @@ const HowItWorksSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            How Avigate Works
+            How It Works
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Getting started with smarter commuting is simple and straightforward
+            Getting around is as easy as 1-2-3
           </p>
         </div>
         

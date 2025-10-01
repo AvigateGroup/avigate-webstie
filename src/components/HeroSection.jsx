@@ -6,11 +6,11 @@ const HeroSection = () => {
           {/* Content Section */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-800 leading-tight animate-fade-in">
-              Navigate Your City
-              <span className="text-[#86B300] block mt-2">Smarter with Avigate</span>
+              Move around Nigerian Cities
+              <span className="text-[#86B300] block mt-2">Like a Local</span>
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slide-up">
-              Simplify your public transport journey with real-time updates, fare estimation, and community-driven insights for buses, taxis, tricycles, and more.
+              Discover the easiest way to move around Lagos, Abuja, Port Harcourt and more using buses, keke, okada, and local transport. Save money, travel smart, explore fearlessly.
             </p>
             
             {/* Coming Soon Badge */}

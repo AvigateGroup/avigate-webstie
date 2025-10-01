@@ -1,53 +1,56 @@
-import { Clock, MapPin, Users, Route } from 'lucide-react';
-
-const FeatureCard = ({ icon: Icon, title, description }) => (
-  <div className="card p-8">
-    <div className="w-16 h-16 bg-[#86B300]/10 rounded-2xl flex items-center justify-center mb-6">
-      <Icon className="w-8 h-8 text-[#86B300]" />
-    </div>
-    <h3 className="text-xl font-bold text-gray-800 mb-4">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{description}</p>
-  </div>
-);
-
 const FeaturesSection = () => {
   return (
-    <section id="features" className="section-padding bg-white">
-      <div className="container-width">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Why Choose Avigate?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience the future of urban mobility with features designed to make your commute smarter, cheaper, and more reliable.
+          <p className="text-xl text-gray-600">
+            Save money, travel smart, explore fearlessly
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <FeatureCard 
-            icon={Clock}
-            title="Real-time Routes"
-            description="Get live updates on buses, taxis, tricycles, and other transport options with accurate arrival times."
-          />
-          <FeatureCard 
-            icon={MapPin}
-            title="Fare Estimation"
-            description="Know your transportation cost upfront with accurate fare estimates for all vehicle types."
-          />
-          <FeatureCard 
-            icon={Users}
-            title="Community Updates"
-            description="Stay informed with real-time updates from fellow commuters about traffic, delays, and route changes."
-          />
-          <FeatureCard 
-            icon={Route}
-            title="Multi-modal Planning"
-            description="Plan journeys using buses, minibuses, taxis, motorcycles, and tricycles all in one comprehensive app."
-          />
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center mb-6">
+              <span className="text-6xl">💰</span>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Save 60-80%</h3>
+            <p className="text-gray-600 text-center leading-relaxed">
+              Pay fair local transport fares instead of expensive e-hailing services
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center mb-6">
+              <span className="text-6xl">🗺️</span>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Real-Time Navigation</h3>
+            <p className="text-gray-600 text-center leading-relaxed">
+              Step-by-step guidance with local landmarks and cultural awareness
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center mb-6">
+              <span className="text-6xl">🛡️</span>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Travel Safely</h3>
+            <p className="text-gray-600 text-center leading-relaxed">
+              Share live location, get safe route recommendations, and emergency support
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center mb-6">
+              <span className="text-6xl">🚕</span>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">All Local Transport Modes</h3>
+            <p className="text-gray-600 text-center leading-relaxed">
+              One app for every journey
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 };
-
 export default FeaturesSection;
