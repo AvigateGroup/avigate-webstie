@@ -6,7 +6,7 @@ const CTASection = () => {
           Ready to Transform Your Commute?
         </h2>
         <p className="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto px-4 sm:px-0">
-          Get ready for the future of smart commuting. Download Avigate and join thousands of Nigerians who will soon be commuting smarter, cheaper, and stress-free.
+          Join thousands of Nigerians navigating smarter every day
         </p>
         
         {/* Coming Soon Badge */}
